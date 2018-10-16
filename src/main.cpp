@@ -1,7 +1,7 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         :
-  Created on     : October  7, 2018
+  Author         : Jessica Gutierrez
+  Created on     : October  16, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
   Usage          : nuttyfact
@@ -35,7 +35,11 @@ using namespace std;
 /******************************************************************************/
 
 // The syntax of the output function that must be used to print an oddity.
-typedef ostream& (*output_function) (ostream & out);
+
+typedef ostream& (*output_function) (const ostream & out);
+ostream&intro_oddity ( ostream & out);
+ostream&gutierrezjdr_oddity ( ostream & out);
+ostream& johncgenere_oddity(ostream &out);
 
 
 /******************************************************************************
@@ -44,18 +48,37 @@ typedef ostream& (*output_function) (ostream & out);
 
 ******************************************************************************/
 
-ostream& johncgenere_oddity(ostream &out);
+
 
 int main(int argc, char* argv[] )
 {
-    // Calls to output functions
-    johncgenere_oddity(cout);
 
-
+	
+  // Calls to output functions
+	intro_oddity(cout);
+	gutierrezjdr_oddity(cout);
+	johncgenere_oddity(cout);
+	
     return 0;
 }
+
+
+ostream&intro_oddity (ostream & out)
+{
+	out<<"This is a collection of strange but true facts."<<endl;
+	
+	return out;
+} 
+
+ostream&gutierrezjdr_oddity (ostream & out)
+{
+	out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
+	
+	return out;
+} 
 
 ostream& johncgenere_oddity(ostream &out){
     out << "Why do we drive on parkways and park on driveways?" << endl;
     return out;
 }
+
