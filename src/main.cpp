@@ -40,7 +40,7 @@ typedef ostream& (*output_function) (const ostream & out);
 ostream&intro_oddity ( ostream & out);
 ostream&gutierrezjdr_oddity ( ostream & out);
 ostream& johncgenere_oddity(ostream &out);
-
+ostream& chocolate_spaghet_oddity(ostream &out);
 
 /******************************************************************************
 
@@ -58,6 +58,7 @@ int main(int argc, char* argv[] )
 	intro_oddity(cout);
 	gutierrezjdr_oddity(cout);
 	johncgenere_oddity(cout);
+    chocolate_spaghet_oddity(cout);
 	
     return 0;
 }
@@ -82,3 +83,7 @@ ostream& johncgenere_oddity(ostream &out){
     return out;
 }
 
+ostream& chocolate_spaghet_oddity(ostream &out){
+    out << "If you're in a vehicle going the speed of light, what happens when you turn on the headlights?" << endl;
+    return out;
+}
