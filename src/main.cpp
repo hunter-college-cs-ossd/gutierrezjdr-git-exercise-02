@@ -41,6 +41,8 @@ ostream&intro_oddity ( ostream & out);
 ostream&gutierrezjdr_oddity ( ostream & out);
 ostream& johncgenere_oddity(ostream &out);
 ostream& chocolate_spaghet_oddity(ostream &out);
+ostream& f0cus10_oddity (ostream& out);
+
 
 /******************************************************************************
 
@@ -58,8 +60,8 @@ int main(int argc, char* argv[] )
 	intro_oddity(cout);
 	gutierrezjdr_oddity(cout);
 	johncgenere_oddity(cout);
-    chocolate_spaghet_oddity(cout);
-	
+  chocolate_spaghet_oddity(cout);
+	f0cus10_oddity(cout);
     return 0;
 }
 
@@ -67,14 +69,12 @@ int main(int argc, char* argv[] )
 ostream&intro_oddity (ostream & out)
 {
 	out<<"This is a collection of strange but true facts."<<endl;
-	
 	return out;
 } 
 
 ostream&gutierrezjdr_oddity (ostream & out)
 {
 	out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
-	
 	return out;
 } 
 
@@ -86,4 +86,8 @@ ostream& johncgenere_oddity(ostream &out){
 ostream& chocolate_spaghet_oddity(ostream &out){
     out << "If you're in a vehicle going the speed of light, what happens when you turn on the headlights?" << endl;
     return out;
+}
+ostream& f0cus10_oddity(ostream &out){
+	out << "Why is brassiere singular and panties plural?" << endl;
+	return out;
 }
