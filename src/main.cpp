@@ -40,7 +40,7 @@ typedef ostream& (*output_function) (const ostream & out);
 ostream&intro_oddity ( ostream & out);
 ostream&gutierrezjdr_oddity ( ostream & out);
 ostream& johncgenere_oddity(ostream &out);
-
+ostream& f0cus10_oddity (ostream& out);
 
 /******************************************************************************
 
@@ -58,7 +58,7 @@ int main(int argc, char* argv[] )
 	intro_oddity(cout);
 	gutierrezjdr_oddity(cout);
 	johncgenere_oddity(cout);
-	
+	f0cus10_oddity(cout);
     return 0;
 }
 
@@ -82,3 +82,7 @@ ostream& johncgenere_oddity(ostream &out){
     return out;
 }
 
+ostream& f0cus10_oddity(ostream &out){
+	out << "Why is brassiere singular and panties plural?" << endl;
+	return out;
+}
